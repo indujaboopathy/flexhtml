@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="design.css">
+    <style media="screen">         
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .dropdown{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            list-style-type: none;
+        }
+        a {
+            display: block;
+            width: 200px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-size: large;
+            text-decoration: none;
+            text-align: center;
+            
+        }
+        a:hover{
+            background-color: red;
+        }
+        .Products {
+            list-style-type: none;
+            display: none;
+        
+        }
+        .dropdown li:nth-child(2):hover .Products{
+            display: block;
+        }
+        .bags {
+            list-style-type: none;
+            display: none;
+        }
+        .Products li:nth-child(4):hover .bags{
+            display: block;
+            transform: translateX(200px) translateY(-40px);
+            
+            position: absolute;
+            
+            }
+            aside{
+                height: 450px;
+                flex: 1 0 250px;
+                margin: 5px;
+                background: skyblue;
+            }
+
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <ul class="dropdown">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a>
+                <ul class="Products">
+                    <li><a href="#">mobiles</a></li>
+                    <li><a href="#">laptops</a></li>
+                    <li><a href="#">books</a></li>
+                    <li><a href="#">bags</a>
+                        <ul class="bags">
+                        <li><a href="#">hand bags</a></li>  
+                        <li><a href="#">school bags</a></li>
+                        <li><a href="#">hand purses</a></li>
+                        </ul></li>
+                    
+                    <li><a href="#">shoes</a></li>
+
+                    
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Help</a>
+            </li>
+        </ul>
+        <aside> The Roman emperors were the rulers of the Roman Empire from the granting of the title Augustus to Octavian (pictured) in 27 BC.
+             The English word emperor derives from imperator, an ancient honorific that served as one of
+              the several titles of the emperor. Early emperors ruled behind a republican facade and 
+              avoided monarchical titles, but this changed over the following centuries, after which 
+              the position became more akin to an absolute monarchy. After the Crisis of the Third Century,
+               the empire was split into a Greek East and Latin West, each with its own emperor. 
+                </aside>
+    </div>
+    <footer>
+        <h2>&copy; copyright Reserved</h2>
+       
+    </footer>
+    
+  </body>
+</html>
